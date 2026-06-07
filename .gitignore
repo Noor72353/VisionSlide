@@ -1,0 +1,37 @@
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Build and installer output
+build/
+dist/
+installer/
+*.log
+
+# Local runtime data containing users, saved sign-ins, preferences, and history
+visionslide_auth.db
+visionslide_credentials.json
+visionside_settings.json
+visionslide_admin_emails.json
+*.sqlite
+*.sqlite3
+*.db
+
+# Local secrets and machine-specific configuration
+.env
+.env.*
+*.secret
+*_secret.*
+credentials.json
+
+# Editor and OS files
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+
+# Temporary/debug files
+tmp_*.py
+*_debug.py
