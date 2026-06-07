@@ -35,3 +35,6 @@ Desktop.ini
 # Temporary/debug files
 tmp_*.py
 *_debug.py
+
+# Documentation figures generated for the report
+Figure_*.png
