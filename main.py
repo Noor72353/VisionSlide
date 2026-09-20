@@ -2,11 +2,11 @@ import sys
 import os
 from pathlib import Path
 
-# Suppress Qt DPI awareness warning on Windows
+# Keep the installed app grouped under the VisionSlide identity on Windows.
+# Let Qt manage DPI awareness itself; setting it manually can block startup.
 if os.name == 'nt':
     try:
         import ctypes
-        ctypes.windll.user32.SetProcessDpiAwarenessContext(ctypes.c_int(-4))  # DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2
         ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("VisionSlide.App")
     except (AttributeError, OSError):
         pass  # Ignore if not available on older Windows versions

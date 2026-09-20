@@ -3,7 +3,7 @@
 import sqlite3
 from pathlib import Path
 
-from PySide6.QtCore import QEvent, QEasingCurve, QPropertyAnimation, QRect, QSize, Qt, QTimer, Signal
+from PySide6.QtCore import QObject, QEvent, QEasingCurve, QPropertyAnimation, QRect, QSize, Qt, QTimer, Signal
 from PySide6.QtGui import (
     QColor,
     QIcon,
@@ -1432,7 +1432,7 @@ class LoginWindow(QDialog):
         if stored_password:
             self.signin_password_input.setText(stored_password)
 
-    def eventFilter(self, watched: QObject, event: QEvent) -> bool:
+    def eventFilter(self, watched: QObject, event: QEvent) -> bool: 
         if event.type() == QEvent.Show and isinstance(watched, QDialog):
             if watched.property("dialogOpeningHidden") == "true":
                 QTimer.singleShot(20, lambda dialog=watched: self._reveal_prepared_dialog(dialog))
