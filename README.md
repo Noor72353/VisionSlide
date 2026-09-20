@@ -1,5 +1,11 @@
 # VisionSlide
 
+## Project Walkthrough Video
+
+Project demo recording: https://github.com/Noor72353/VisionSlide/blob/main/VisionSlide.mp4
+
+This video shows the live project working, the main user flow, and a brief explanation of the technical decisions and testing.
+
 VisionSlide is a Python desktop application for controlling presentation slides using hand gestures and offline voice commands.
 
 It is built as a Final Year Project and currently combines:
