@@ -2,7 +2,7 @@
 
 ## Project Walkthrough Video
 
-Project demo recording: https://github.com/Noor72353/VisionSlide/blob/main/VisionSlide.mp4
+Project demo recording: https://drive.google.com/file/d/1ANDsiTHzQyH7jqsJNM_8yB5GouZPueuf/view?usp=sharing
 
 This video shows the live project working, the main user flow, and a brief explanation of the technical decisions and testing.
 
